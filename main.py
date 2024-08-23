@@ -11,7 +11,8 @@ root['bg'] = 'pink' #параметры bg и fg - цвета фона и тек
 def knb():
     knb = ['Камень', 'Ножницы', 'Бумага'] #список
     value = choice(knb)
-    labelText.configure(text=value)
+    labelText.configure(text='Великий рандом говорит: '+value)
+    labelText.place(y=125, x=75)
 
 
 labelText = Label(root, text='Раз, два, три!', fg='black', font=('Comic Sans MS', 20), bg='white')
@@ -20,19 +21,22 @@ labelText.place(y=125, x=220)
 stone = Button(root,
                text='Камень',
                font=('Comic Sans MS', 20),
-               bg='white') #виджет кнопки
+               bg='white', #виджет кнопки
+               command=knb)
 stone.place(y=200, x=85)
 
 stone = Button(root,
                text='Ножницы',
                font=('Comic Sans MS', 20),
-               bg='white') #виджет кнопки
+               bg='white',  # виджет кнопки
+               command=knb)
 stone.place(y=200, x=230)
 
 stone = Button(root,
                text='Бумага',
                font=('Comic Sans MS', 20),
-               bg='white') #виджет кнопки
+               bg='white',  # виджет кнопки
+               command=knb)
 stone.place(y=200, x=405)
 
 root.mainloop()
