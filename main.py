@@ -25,18 +25,18 @@ stone = Button(root,
                command=knb)
 stone.place(y=200, x=85)
 
-stone = Button(root,
+scissoers = Button(root,
                text='Ножницы',
                font=('Comic Sans MS', 20),
                bg='white',  # виджет кнопки
                command=knb)
-stone.place(y=200, x=230)
+scissors.place(y=200, x=230)
 
-stone = Button(root,
+paper = Button(root,
                text='Бумага',
                font=('Comic Sans MS', 20),
                bg='white',  # виджет кнопки
                command=knb)
-stone.place(y=200, x=405)
+paper.place(y=200, x=405)
 
 root.mainloop()
