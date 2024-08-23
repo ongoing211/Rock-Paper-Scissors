@@ -18,25 +18,25 @@ def knb():
 labelText = Label(root, text='Раз, два, три!', fg='black', font=('Comic Sans MS', 20), bg='white')
 labelText.place(y=125, x=220)
 
-stone = Button(root,
+btn_stone = Button(root,
                text='Камень',
                font=('Comic Sans MS', 20),
                bg='white', #виджет кнопки
                command=knb)
-stone.place(y=200, x=85)
+btn_stone.place(y=200, x=85)
 
-scissoers = Button(root,
+btn_scissoers = Button(root,
                text='Ножницы',
                font=('Comic Sans MS', 20),
                bg='white',  # виджет кнопки
                command=knb)
-scissors.place(y=200, x=230)
+btn_scissors.place(y=200, x=230)
 
-paper = Button(root,
+btn_paper = Button(root,
                text='Бумага',
                font=('Comic Sans MS', 20),
                bg='white',  # виджет кнопки
                command=knb)
-paper.place(y=200, x=405)
+btn_paper.place(y=200, x=405)
 
 root.mainloop()
